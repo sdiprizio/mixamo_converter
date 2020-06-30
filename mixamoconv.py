@@ -117,8 +117,8 @@ def rename_bones(s='', t='unreal'):
         'RightHandThumb4': 'thumb_04_r',
         'LeftToeBase': 'ball_l',
         'RightToeBase': 'ball_r',
-        'RightToeEnd': 'toe_r',
-        'LeftToeEnd': 'toe_l'
+        'RightToe_End': 'toe_r',
+        'LeftToe_End': 'toe_l'
     }
     schema = {'unreal': unreal }
     if type(s) == str:
