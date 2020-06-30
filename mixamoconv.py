@@ -35,7 +35,7 @@ def remove_namespace(s=''):
     """function for removing all namespaces from strings, objects or even armatrure bones"""
 
     if type(s) == str:
-        i = re.search(r"[:_]", s[::-1])
+        i = re.search(r"[:]", s[::-1])
         if i:
             return s[-(i.start())::]
         else:
@@ -69,6 +69,9 @@ def rename_bones(s='', t='unreal'):
         'Neck1': 'neck_01',
         'Neck': 'neck_01',
         'Head': 'head',
+        'HeadTop_End': 'head',
+        'LeftEye': 'eye_l',
+        'RightEye': 'eye_r',
         'LeftUpLeg': 'thigh_l',
         'LeftLeg': 'calf_l',
         'LeftFoot': 'foot_l',
