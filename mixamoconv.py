@@ -3,7 +3,7 @@
 '''
     Copyright (C) 2017-2018  Antonio 'GNUton' Aloisio
     Copyright (C) 2017-2018  Enzio Probst
-  
+
     Created by Enzio Probst
 
     This program is free software: you can redistribute it and/or modify
@@ -78,33 +78,43 @@ def rename_bones(s='', t='unreal'):
         'LeftHandIndex1': 'index_01_l',
         'LeftHandIndex2': 'index_02_l',
         'LeftHandIndex3': 'index_03_l',
+        'LeftHandIndex4': 'index_04_l',
         'LeftHandMiddle1': 'middle_01_l',
         'LeftHandMiddle2': 'middle_02_l',
         'LeftHandMiddle3': 'middle_03_l',
+        'LeftHandMiddle4': 'middle_04_l',
         'LeftHandPinky1': 'pinky_01_l',
         'LeftHandPinky2': 'pinky_02_l',
         'LeftHandPinky3': 'pinky_03_l',
+        'LeftHandPinky4': 'pinky_04_l',
         'LeftHandRing1': 'ring_01_l',
         'LeftHandRing2': 'ring_02_l',
         'LeftHandRing3': 'ring_03_l',
+        'LeftHandRing4': 'ring_04_l',
         'LeftHandThumb1': 'thumb_01_l',
         'LeftHandThumb2': 'thumb_02_l',
         'LeftHandThumb3': 'thumb_03_l',
+        'LeftHandThumb4': 'thumb_04_l',
         'RightHandIndex1': 'index_01_r',
         'RightHandIndex2': 'index_02_r',
         'RightHandIndex3': 'index_03_r',
+        'RightHandIndex4': 'index_04_r',
         'RightHandMiddle1': 'middle_01_r',
         'RightHandMiddle2': 'middle_02_r',
         'RightHandMiddle3': 'middle_03_r',
+        'RightHandMiddle4': 'middle_04_r',
         'RightHandPinky1': 'pinky_01_r',
         'RightHandPinky2': 'pinky_02_r',
         'RightHandPinky3': 'pinky_03_r',
+        'RightHandPinky4': 'pinky_04_r',
         'RightHandRing1': 'ring_01_r',
         'RightHandRing2': 'ring_02_r',
         'RightHandRing3': 'ring_03_r',
+        'RightHandRing4': 'ring_04_r',
         'RightHandThumb1': 'thumb_01_r',
         'RightHandThumb2': 'thumb_02_r',
         'RightHandThumb3': 'thumb_03_r',
+        'RightHandThumb4': 'thumb_04_r',
         'LeftToeBase': 'ball_l',
         'RightToeBase': 'ball_r'
     }
@@ -419,7 +429,7 @@ def batch_hip_to_root(source_dir, dest_dir, use_x=True, use_y=True, use_z=True, 
                       restoffset=(0, 0, 0), hipname='', fixbind=True, apply_rotation=True, apply_scale=False,
                       b_remove_namespace=True, b_unreal_bones=False, add_leaf_bones=False, knee_offset=(0, 0, 0), ignore_leaf_bones=True, automatic_bone_orientation=True, quaternion_clean_pre=True, quaternion_clean_post=True, foot_bone_workaround=False):
     """Batch Convert MixamoRigs"""
-    
+
     source_dir = Path(source_dir)
     dest_dir = Path(dest_dir)
 
